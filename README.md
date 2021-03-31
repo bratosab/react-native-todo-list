@@ -121,7 +121,30 @@ const styles = StyleSheet.create({
 export default Task;
 ```
 
-6. Use the `<Task>` Component in your App.js `<Task />`
+6. Use the `<Task />` Component in your App.js
 7. Add a prop to your task component to pass a specific text to show
 8. You should now have a task that is correclty shown in your view.
 9. Commit your changes with the comment `feat(task): added task section and task component`
+
+## Part 2 - Build "Add task" section 
+1. In your App.js, use the `<KeyboardAvoidingView>` component, which ensures the keyboard does not cover the items on screen.
+2. Add the input using `<TextInput>`
+    - create a state for the task being added using the useState hook
+    - Connect the value et onChangeText to the task state
+3. Use a `<TouchableOpacity>` component to create the + button
+    - Add the necessary nested components (View/Text)
+    - connect the `onPress` event of `<TouchableOpacity>` to a function that will handle the addTask code
+    - Code the addTask() function, it should : 
+        - add the currently written task to a list of tasks, 
+        - empty the state of current task, 
+        - and hide the keyboard
+4. Loop on the list of tasks to display them using the `<Task />` component built earlier (ex: using a .map() operator)
+5. You should now be able to add a task to the list of tasks and display them
+6. Commit your changes with the comment `feat(new task): add new task section`
+
+### Part 3 - Completing a task
+1. In your App.js, wrap the `<Task />` component in a `<TouchableOpacity>` component to be able to detect an `onPress` event
+2. Connect that event to a function that will splice the finished task from the state containing the list of tasks.
+3. You're done!
+4. Commit your changes with the comment `feat(finish task): added task completion`
+5. Push your changes to Github and communicate your Repo URL
