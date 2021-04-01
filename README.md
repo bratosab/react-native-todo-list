@@ -13,7 +13,7 @@ https://www.figma.com/file/53Saq8UIYvgFJO0g5yuuZZ/React-Native-Todo-List?node-id
 # Diiage DI3P4 - React native practice 
 ## Project setup 
 1. Fork the current repository using your own Github account
-2. Clone the forked repo to your workspace `git clone 
+2. Clone the forked repo to your workspace `git clone ...`
 3. We're going to use Expo, if you do not have expo cli installed, install it now using `npm install --global expo-cli`
 4. Initiate app using `expo init todoList`
     - Select a blank template (blank - a minimal app as clean as an empty canvas) - dependancies will now install
@@ -142,7 +142,7 @@ export default Task;
 5. You should now be able to add a task to the list of tasks and display them
 6. Commit your changes with the comment `feat(new task): add new task section`
 
-### Part 3 - Completing a task
+## Part 3 - Completing a task
 1. In your App.js, wrap the `<Task />` component in a `<TouchableOpacity>` component to be able to detect an `onPress` event
 2. Connect that event to a function that will splice the finished task from the state containing the list of tasks.
 3. You're done!
